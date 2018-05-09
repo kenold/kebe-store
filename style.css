@@ -3,6 +3,12 @@ body {
     padding: 3em;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -25,15 +31,16 @@ body {
 .product-details .title h1 {
     font-size: 4rem;
     font-weight: 900;
-    line-height: 1
+    line-height: 1;
+    margin: 10px 0;
 }
 
 .product-details .sizes {
-    display: flex;    
     align-items: center;  
-    text-transform: uppercase;
+    display: flex;    
     font-size: .9rem;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .product-details .sizes .size-item {
