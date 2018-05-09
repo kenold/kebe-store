@@ -1,3 +1,20 @@
 body {
     background-color: #eee;;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 435px 125px;
+}
+
+.product-image {
+    background-color: red;
+}
+
+.product-details {
+    background-color: green;
+}
+
+.sidebar {
+    background-color: pink;
+}
