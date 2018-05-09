@@ -5,16 +5,20 @@ body {
 .grid {
     display: grid;
     grid-template-columns: auto 435px 125px;
+    grid-template-areas: "image details sidebar";
 }
 
 .product-image {
     background-color: red;
+    grid-area: image;
 }
 
 .product-details {
     background-color: green;
+    grid-area: details;
 }
 
 .sidebar {
     background-color: pink;
+    grid-area: sidebar;
 }
