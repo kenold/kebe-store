@@ -1,15 +1,20 @@
 body {
-    background-color: #eee;;
+    padding: 3em;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-areas: "image details sidebar";
+    grid-gap: 1rem;
 }
 
-.product-image {    
-    grid-area: image;
+.product-image {
+    grid-area: image;    
+}
+
+.product-image img {    
+    max-width: 100%;
 }
 
 .product-details {
