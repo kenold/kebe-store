@@ -7,7 +7,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-areas: "image details sidebar";
-    grid-gap: 1rem;
+    grid-gap: 4rem;
 }
 
 .product-image {
@@ -20,6 +20,42 @@ body {
 
 .product-details {
     grid-area: details;
+}
+
+.product-details .title h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1
+}
+
+.product-details .sizes {
+    display: flex;    
+    align-items: center;  
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 800;
+}
+
+.product-details .sizes .size-item {
+    font-size: 0.7rem;    
+    display: inline-block;
+    border: 2px solid #bbb;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.product-details .sizes .size-item.active {
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+.product-details .description p {
+    color: #666;
+    line-height: 1.5;
 }
 
 .sidebar {
