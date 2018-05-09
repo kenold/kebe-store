@@ -1,3 +1,5 @@
+/* TODO: convert to sass */
+
 body {
     font-family: 'Roboto', sans-serif;
     padding: 3em;
@@ -24,22 +26,36 @@ ul {
     max-width: 100%;
 }
 
+.product-details .category {
+    color: #fff;
+    background: #ff0000;
+    font-size: 0.8rem;
+    padding: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
 .product-details {
     grid-area: details;
 }
 
 .product-details .title h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     line-height: 1;
-    margin: 10px 0;
+    margin: 30px 0 10px;
+}
+
+.product-details .description p {
+    color: #666;
+    line-height: 1.5;
 }
 
 .product-details .sizes {
-    align-items: center;  
-    display: flex;    
+    display: flex;
+    align-items: center;         
     font-size: .9rem;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -60,9 +76,22 @@ ul {
     color: #ff0000;
 }
 
-.product-details .description p {
-    color: #666;
-    line-height: 1.5;
+.product-details .price-cart {
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    border: 2px solid #ff0000;
+    padding:15px;
+    color: #ff0000;
+    font: inherit;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.product-details .price-cart .cart {
+    font-size: 1rem;
 }
 
 .sidebar {
