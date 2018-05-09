@@ -38,6 +38,7 @@ ul {
 
 .product-details {
     grid-area: details;
+    align-self: center;
 }
 
 .product-details .title h1 {
