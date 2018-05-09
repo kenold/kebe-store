@@ -4,12 +4,11 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: auto 435px 125px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "image details sidebar";
 }
 
-.product-image {
-    background-color: red;
+.product-image {    
     grid-area: image;
 }
 
