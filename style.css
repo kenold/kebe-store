@@ -18,11 +18,9 @@ body {
 }
 
 .product-details {
-    background-color: green;
     grid-area: details;
 }
 
 .sidebar {
-    background-color: pink;
     grid-area: sidebar;
 }
