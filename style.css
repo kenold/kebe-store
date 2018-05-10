@@ -110,7 +110,7 @@ ul {
 
 .sidebar {
     grid-area: sidebar;
-    align-self: center;
+    align-self: flex-end;
 }
 
 
@@ -140,7 +140,7 @@ ul {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
-        grid-gap: 1rem;
+        grid-gap: 1rem;        
     }
 
     .product-details .title h1 {
