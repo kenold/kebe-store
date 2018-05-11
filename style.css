@@ -11,6 +11,10 @@ ul {
     margin: 0;
 }
 
+.main-header {
+    grid-area: header;
+}
+
 .product-image {
     grid-area: image;
     align-self: center;  
@@ -115,6 +119,11 @@ ul {
     font-size: 1rem;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* tablet */
 @media only screen and (min-width: 720px) and (max-width: 980px) {
@@ -146,7 +155,9 @@ ul {
         width: 80%;        
         grid-template-columns: 500px 2rem 40% 2rem 66px;
         grid-template-rows: auto;
-        grid-template-areas: "image . details . sidebar";
+        grid-template-areas: 
+        ". . header . ."
+        "image . details . sidebar";
         margin: auto;      
     }
 
