@@ -87,13 +87,13 @@ ul {
 
 .product-details .sizes .size-item {
     font-size: 0.7rem;    
-    font-weight: 900;
+    font-weight: 500;
+    position: relative;
     display: inline-block;
-    border: 2px solid #bbb;
-    width: 15px;
-    height: 15px;
-    padding: 5px;
-    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    width: calc(25% - 10px * 3/4);
+    padding: 9px 8px;
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -115,7 +115,6 @@ ul {
     text-transform: uppercase;
     margin-top: 25px;
     cursor: pointer;
-    border-radius: 2rem;
 }
 
 .product-details .price-cart .cart {
