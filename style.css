@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    padding: 3em;
+    padding: 1.5em;
 }
 
 ul {
@@ -154,7 +154,7 @@ nav ul {
 @media only screen and (min-width: 980px) {
     .wrapper {
         display: grid;
-        width: 80%;        
+        width: 70%;        
         grid-template-columns: 1fr 2rem 1fr 2rem auto;
         grid-template-rows: auto;
         grid-template-areas: 
